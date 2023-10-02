@@ -39,7 +39,8 @@ module.exports = {
         'gray': '#B6B6B6'
       },
       boxShadow: {
-        'search': '0px 0px 17px 0px rgba(0, 0, 0, 0.15);'
+        'search': '0px 0px 17px 0px rgba(0, 0, 0, 0.15)',
+        'food-slider-item': '0px 0px 31px 0px rgba(0, 0, 0, 0.05)' 
       }
     },
   },

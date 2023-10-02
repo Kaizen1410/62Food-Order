@@ -8,6 +8,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
     font-size: 95px;
     line-height: normal;
@@ -36,4 +40,12 @@ h5 {
     font-size: 18px;
     line-height: normal;
     font-weight: 600;
+}
+
+.btn-order {
+    background: linear-gradient(180deg, #EFAB68 0%, #F48E28 100%);
+}
+
+.food-slider {
+    background: linear-gradient(200deg, #D9D9D9 -18.39%, rgba(217, 217, 217, 0.00) 89.51%);
 }

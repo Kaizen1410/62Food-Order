@@ -4,6 +4,26 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
+        'h1': ['95px', {
+          lineHeight: 'normal',
+          fontWeight: '700'
+        }],
+        'h2': ['48px', {
+          lineHeight: 'normal',
+          fontWeight: '700'
+        }],
+        'h3': ['36px', {
+          lineHeight: 'normal',
+          fontWeight: '700'
+        }],
+        'h4': ['26px', {
+          lineHeight: 'normal',
+          fontWeight: '700'
+        }],
+        'h5': ['18px', {
+          lineHeight: 'normal',
+          fontWeight: '600'
+        }],
         'p1': ['18px', {
           lineHeight: 'normal',
           fontWeight: '500'
@@ -17,6 +37,9 @@ module.exports = {
         'primary': '#F48E28',
         'secondary': '#F5DDC4',
         'gray': '#B6B6B6'
+      },
+      boxShadow: {
+        'search': '0px 0px 17px 0px rgba(0, 0, 0, 0.15);'
       }
     },
   },

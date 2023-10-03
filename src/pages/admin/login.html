@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,35 @@
     <link rel="icon" href="../../assets/img/logo.png">
     <link rel="stylesheet" href="../../css/output.css">
 </head>
+
 <body>
-    <div class="login-form justify-center text-center min-h-100vh flex mt-52 ">
-        <div class="form-container bg-white rounded-[35px] shadow-2xl p-8 w-96 ">
-            <div class="avatar mx-auto w-[80px] h-[80px] rounded-xl">
-                <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" alt="Avatar">
+    <div class="justify-center items-center text-center min-h-screen flex">
+        <div class="bg-white rounded-[35px] shadow-2xl p-8 w-[450px]">
+            <div class="mx-auto w-[80px] h-[80px] rounded-xl mb-3">
+                <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png"
+                    alt="Avatar">
             </div>
-            <h2 class="form-title text-center text-2xl mb-5">Admin Login</h2>
+            <h2 class="text-center text-2xl mb-5">Admin Login</h2>
             <form>
-                <div class="form-group mb-3 relative">
-                    <i class="fa-regular fa-envelope absolute top-1/2 -translate-y-1/2 left-3"></i>
-                    <input type="text" 
-                    class="form-input rounded p-3 pl-9 w-full border"
-                    name="email" placeholder="Email" required="required">
+                <div class="mb-3 relative">
+                    <label class="absolute top-1/2 -translate-y-1/2 left-3" for=""><i class="fa-solid fa-envelope"></i></label>
+                    <input type="text" class="rounded-lg p-3 pl-9 w-full shadow-search" name="email" placeholder="Email"
+                        required="required">
                 </div>
-                <div class="form-group mb-3 relative">
-                    <i class="fa-solid fa-key absolute top-1/2 -translate-y-1/2 left-3"></i>
-                    <input type="password" 
-                    class="form-input rounded p-3 pl-9 w-full border"
-                    name="password" placeholder="Password" required="required">
+                <div class="mb-3 relative">
+                    <label class="absolute top-1/2 -translate-y-1/2 left-3" for=""><i class="fa-solid fa-key"></i></label>
+                    <input type="password" class="rounded-lg p-3 pl-9 w-full shadow-search" name="password" placeholder="Password"
+                        required="required">
                 </div>
-                <div class="form-group">
-                    <a href="."
-                    class="submit-button block btn-order text-white border rounded py-3 w-full text-base font-bold cursor-pointer "
-                    >Login</a>
-                </div>
+                <a href="."
+                    class="block btn-order text-white rounded-2xl py-3 w-full text-base font-bold cursor-pointer ">Login</a>
             </form>
-            <div class="forgot-password underline mt-3">
+            <div class="underline mt-3">
                 <a href="#">Forgot Password?</a>
             </div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/7aa6d504e7.js" crossorigin="anonymous"></script>
-    </body>
-    </html>
+</body>
+
+</html>

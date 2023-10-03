@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="container mx-auto px-10 sm:px-0">
+    <div class="container mb-20 mx-auto px-10 sm:px-0">
         <!-- Navbar -->
         <nav class="mt-[29px] w-full lg:w-[calc(100%-384px)] h-[65px] bg-white z-40">
             <div class="flex h-full justify-between items-center">
@@ -28,8 +28,8 @@
         </nav>
 
         <!-- Order Menu -->
-        <div class="fixed top-0 right-0 overflow-x-hidden w-0 lg:w-96 h-full lg:p-8 shadow-lg">
-            <h4 class="mb-10">My Order</h4>
+        <div class="fixed top-0 right-0 overflow-x-hidden w-0 lg:w-96 h-full lg:p-8 shadow-lg bg-white">
+            <h4 class="mb-10"><i class="fa-solid fa-cart-shopping"></i> My Order</h4>
 
             <div class="mb-4">
                 <div class="flex border-b gap-3 border-gray pb-3 mt-3">
@@ -161,86 +161,134 @@
             </div>
 
             <div class="mt-10">
-                <h4 class="mb-20">Menu</h4>
+                <h4 class="mb-10">Menu</h4>
 
-                <div class="flex flex-wrap gap-x-10 gap-y-28">
-                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
-
-                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
-                            <img src="../assets/img/header/burger.png" alt="" class="">
-                            <h4 class="text-center">Burger</h4>
-                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
-                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 75.000</h5>
+                <div class="flex justify-center flex-wrap gap-10">
+                    <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden">
+                        <img class="h-[210px] w-full object-cover" src="../assets/img/popular/1.jpg" alt="">
+                        <div class="px-[33px] pb-[44px] pt-4">
+                            <div class="mb-4">
+                                <h4>Gyro Sandwich</h4>
+                            </div>
+                            <div class="flex justify-between">
+                                <button class="px-[29px] py-[14px] bg-primary rounded-[35px] text-white">Add To
+                                    Cart</button>
+                                <p class="text-p1">Rp 75.000</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
-
-                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[232px]">
-                            <img src="../assets/img/header/food-combo.png" alt="" class="">
-                            <h4 class="text-center mt-3">Food Combo</h4>
-                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
-                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 135.000</h5>
+                    <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden">
+                        <img class="h-[210px] w-full object-cover" src="../assets/img/popular/2.jpg" alt="">
+                        <div class="px-[33px] pb-[44px] pt-4">
+                            <div class="mb-4">
+                                <h4>Enchilade</h4>
+                            </div>
+                            <div class="flex justify-between">
+                                <button class="px-[29px] py-[14px] bg-primary rounded-[35px] text-white">Add To
+                                    Cart</button>
+                                <p class="text-p1">Rp 75.000</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
-
-                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[226px]">
-                            <img src="../assets/img/header/pizza.png" alt="" class="">
-                            <h4 class="text-center mt-8">Pizza</h4>
-                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
-                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 90.000</h5>
+                    <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden">
+                        <img class="h-[210px] w-full object-cover" src="../assets/img/popular/3.jpg" alt="">
+                        <div class="px-[33px] pb-[44px] pt-4">
+                            <div class="mb-4">
+                                <h4>Green Beens</h4>
+                            </div>
+                            <div class="flex justify-between">
+                                <button class="px-[29px] py-[14px] bg-primary rounded-[35px] text-white">Add To
+                                    Cart</button>
+                                <p class="text-p1">Rp 75.000</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
-
-                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
-                            <img src="../assets/img/header/cake.png" alt="">
-                            <h4 class="text-center">Cake</h4>
-                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
-                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 75.000</h5>
+                    <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden">
+                        <img class="h-[210px] w-full object-cover" src="../assets/img/popular/4.jpg" alt="">
+                        <div class="px-[33px] pb-[44px] pt-4">
+                            <div class="mb-4">
+                                <h4>Pizza</h4>
+                            </div>
+                            <div class="flex justify-between">
+                                <button class="px-[29px] py-[14px] bg-primary rounded-[35px] text-white">Add To
+                                    Cart</button>
+                                <p class="text-p1">Rp 75.000</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
-
-                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
-                            <img src="../assets/img/header/burger.png" alt="" class="">
-                            <h4 class="text-center">Burger</h4>
-                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
-                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 75.000</h5>
+                    <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden">
+                        <img class="h-[210px] w-full object-cover" src="../assets/img/popular/5.jpg" alt="">
+                        <div class="px-[33px] pb-[44px] pt-4">
+                            <div class="mb-4">
+                                <h4>Chicken Hot Pie</h4>
+                            </div>
+                            <div class="flex justify-between">
+                                <button class="px-[29px] py-[14px] bg-primary rounded-[35px] text-white">Add To
+                                    Cart</button>
+                                <p class="text-p1">Rp 75.000</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
-
-                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[232px]">
-                            <img src="../assets/img/header/food-combo.png" alt="" class="">
-                            <h4 class="text-center mt-3">Food Combo</h4>
-                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
-                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 135.000</h5>
+                    <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden">
+                        <img class="h-[210px] w-full object-cover" src="../assets/img/popular/6.jpg" alt="">
+                        <div class="px-[33px] pb-[44px] pt-4">
+                            <div class="mb-4">
+                                <h4>Green Salad</h4>
+                            </div>
+                            <div class="flex justify-between">
+                                <button class="px-[29px] py-[14px] bg-primary rounded-[35px] text-white">Add To
+                                    Cart</button>
+                                <p class="text-p1">Rp 75.000</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
-
-                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[226px]">
-                            <img src="../assets/img/header/pizza.png" alt="" class="">
-                            <h4 class="text-center mt-8">Pizza</h4>
-                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
-                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 90.000</h5>
-                        </div>
-                    </div>
-                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
-
-                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
-                            <img src="../assets/img/header/cake.png" alt="">
-                            <h4 class="text-center">Cake</h4>
-                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
-                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 75.000</h5>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
 
     </div>
+
+    <!-- Footer -->
+    <footer class="w-full h-[429px] bg-[#FAFAFF] px-[180px] lg:pr-[564px]">
+        <div class="flex gap-[154px]">
+            <div class="mt-[57px] w-[375px]">
+                <img src="../assets/img/logo.png" class="w-[181px] mb-[30px]" alt="">
+                <p class="text-p1 text-gray mb-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo libero viverra dapibus odio sit
+                    malesuada in quis. Arcu tristique elementum viverra integer id.</p>
+                <div class="flex gap-[18px]">
+                    <div class="w-[42px] h-[42px] rounded-full bg-[#F5DDC4] flex justify-center items-center">
+                        <img src="../assets/img/footer/facebook.png" class="w-[22px]" alt="">
+                    </div>
+                    <div class="w-[42px] h-[42px] rounded-full bg-[#F5DDC4] flex justify-center items-center">
+                        <img src="../assets/img/footer/twitter.png" class="w-[22px]" alt="">
+                    </div>
+                    <div class="w-[42px] h-[42px] rounded-full bg-[#F5DDC4] flex justify-center items-center">
+                        <img src="../assets/img/footer/linkedin.png" class="w-[22px]" alt="">
+                    </div>
+                    <div class="w-[42px] h-[42px] rounded-full bg-[#F5DDC4] flex justify-center items-center">
+                        <img src="../assets/img/footer/instagram.png" class="w-[22px]" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-[95px]">
+                <h4 class="mb-[68px]">Opening Restaurant</h4>
+
+                <p class="text-p1 text-gray mb-3">Sat-Wet: 09:00am-10:00PM</p>
+                <p class="text-p1 text-gray mb-3">Thursdayt: 09:00am-11:00PM</p>
+                <p class="text-p1 text-gray">Friday: 09:00am-8:00PM</p>
+            </div>
+
+            <div class="mt-[95px]">
+                <h4 class="mb-[68px]">Opening Restaurant</h4>
+
+                <p class="text-p1 text-gray mb-3">1234 Country Club Ave</p>
+                <p class="text-p1 text-gray mb-3">NC 123456, London, UK</p>
+                <p class="text-p1 text-gray">+0123 456 7891</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/7aa6d504e7.js" crossorigin="anonymous"></script>

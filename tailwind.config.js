@@ -40,7 +40,8 @@ module.exports = {
       },
       boxShadow: {
         'search': '0px 0px 17px 0px rgba(0, 0, 0, 0.15)',
-        'food-slider-item': '0px 0px 31px 0px rgba(0, 0, 0, 0.05)' 
+        'food-slider-item': '0px 0px 31px 0px rgba(0, 0, 0, 0.05)',
+        'product': '0px 2px 30px 0px rgba(0, 0, 0, 0.10)' 
       }
     },
   },

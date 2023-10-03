@@ -1,13 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>62 Food Order</title>
     <link rel="stylesheet" href="../css/output.css">
 </head>
-<body>
 
+<body>
+    <div class="container mx-auto px-10 sm:px-0">
+        <!-- Navbar -->
+        <nav class="mt-[29px] w-full lg:w-[calc(100%-384px)] h-[65px] bg-white z-40">
+            <div class="flex h-full justify-between items-center">
+                <a href="."><img src="../assets/img/logo.png" class="w-[94px]" alt=""></a>
+                <label class="relative w-[393px] h-full shadow-search rounded-[10px]">
+                    <img src="../assets/icon/search.svg" alt=""
+                        class="absolute left-[24px] top-1/2 -translate-y-1/2 w-[25px]">
+                    <input type="search"
+                        class="pl-[71px] pr-[94px] py-[14px] h-full w-full focus:outline-none text-h5 rounded-[10px]"
+                        placeholder="Search">
+                    <div class="absolute right-[86px] top-[14px] h-[37px] w-[1px] bg-[#ADADAD]"></div>
+                    <img src="../assets/icon/order.svg" class="absolute right-[32px] top-1/2 -translate-y-1/2 w-[21px]"
+                        alt="">
+                </label>
+            </div>
+        </nav>
+
+        <!-- Order Menu -->
+        <div class="fixed top-0 right-0 overflow-x-hidden w-0 lg:w-96 h-full lg:p-8 shadow-lg">
+            <h4 class="mb-10">My Order</h4>
+
+            <div class="mb-4">
+                <div class="flex border-b gap-3 border-gray pb-3 mt-3">
+                    <div class="w-[89px]">
+                        <img src="../assets/img/products/kwetiaw.png" class="h-full" alt="">
+                    </div>
+
+                    <div class="flex justify-start items-center grow basis-0">
+                        <div class="w-full">
+                            <h5>Kwetiaw</h5>
+                            <p class="mb-3">Rp<span id="price-1">10000</span></p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex gap-3 items-center">
+                                    <button class="px-3 py-1 bg-primary rounded-xl"
+                                        onclick="minusQuantity('price-1', 'quantity-1', 'total-amount-1')">
+                                        <i class="fa-solid fa-minus text-white text-[12px]"></i>
+                                    </button>
+                                    <span class="font-semibold" id="quantity-1">1</span>
+                                    <button class="px-3 py-1 bg-primary rounded-xl"
+                                        onclick="plusQuantity('price-1', 'quantity-1', 'total-amount-1')">
+                                        <i class="fa-solid fa-plus text-white text-[12px]"></i>
+                                    </button>
+                                </div>
+                                <div class="font-bold">Rp<span id="total-amount-1">10000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex border-b gap-3 border-gray pb-3 mt-3">
+                    <div class="w-[89px]">
+                        <img src="../assets/img/products/kwetiaw.png" class="h-full" alt="">
+                    </div>
+
+                    <div class="flex justify-start items-center grow basis-0">
+                        <div class="w-full">
+                            <h5>Kwetiaw</h5>
+                            <p class="mb-3">Rp<span id="price-2">10000</span></p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex gap-3 items-center">
+                                    <button class="px-3 py-1 bg-primary rounded-xl"
+                                        onclick="minusQuantity('price-2', 'quantity-2', 'total-amount-2')">
+                                        <i class="fa-solid fa-minus text-white text-[12px]"></i>
+                                    </button>
+                                    <span class="font-semibold" id="quantity-2">1</span>
+                                    <button class="px-3 py-1 bg-primary rounded-xl"
+                                        onclick="plusQuantity('price-2', 'quantity-2', 'total-amount-2')">
+                                        <i class="fa-solid fa-plus text-white text-[12px]"></i>
+                                    </button>
+                                </div>
+                                <div class="font-bold">Rp<span id="total-amount-2">10000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex border-b gap-3 border-gray pb-3 mt-3">
+                    <div class="w-[89px]">
+                        <img src="../assets/img/products/kwetiaw.png" class="h-full" alt="">
+                    </div>
+
+                    <div class="flex justify-start items-center grow basis-0">
+                        <div class="w-full">
+                            <h5>Kwetiaw</h5>
+                            <p class="mb-3">Rp<span id="price-3">10000</span></p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex gap-3 items-center">
+                                    <button class="px-3 py-1 bg-primary rounded-xl"
+                                        onclick="minusQuantity('price-3', 'quantity-3', 'total-amount-3')">
+                                        <i class="fa-solid fa-minus text-white text-[12px]"></i>
+                                    </button>
+                                    <span class="font-semibold" id="quantity-3">1</span>
+                                    <button class="px-3 py-1 bg-primary rounded-xl"
+                                        onclick="plusQuantity('price-3', 'quantity-3', 'total-amount-3')">
+                                        <i class="fa-solid fa-plus text-white text-[12px]"></i>
+                                    </button>
+                                </div>
+                                <div class="font-bold">Rp<span id="total-amount-3">10000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-between mb-4">
+                <p class="text-p1">Total Amount</p>
+                <h5>Rp30000</h5>
+            </div>
+            <button class="w-full py-4 rounded-2xl text-white btn-order text-h5">
+                Order
+            </button>
+        </div>
+
+        <div class="lg:pr-96">
+            <!-- Category -->
+            <div class="mt-10">
+                <h4 class="mb-5">Menu Category</h4>
+                <div class="flex gap-5">
+                    <div class="rounded-xl h-16 px-5 shadow-lg flex gap-3 justify-center items-center">
+                        <img src="../assets/icon/order.svg" class="w-7" alt="">
+                        <p class="text-p1">All</p>
+                    </div>
+                    <div class="rounded-xl h-16 px-5 shadow-lg flex gap-3 justify-center items-center">
+                        <i class="fa-solid fa-burger text-2xl"></i>
+                        <p class="text-p1">Junk Food</p>
+                    </div>
+                    <div class="rounded-xl h-16 px-5 shadow-lg flex gap-3 justify-center items-center">
+                        <i class="fa-solid fa-worm text-2xl"></i>
+                        <p class="text-p1">Pasta</p>
+                    </div>
+                    <div class="rounded-xl h-16 px-5 shadow-lg flex gap-3 justify-center items-center">
+                        <i class="fa-solid fa-bowl-rice text-2xl"></i>
+                        <p class="text-p1">Rice</p>
+                    </div>
+                    <div class="rounded-xl h-16 px-5 shadow-lg flex gap-3 justify-center items-center">
+                        <i class="fa-solid fa-wine-bottle text-2xl"></i>
+                        <p class="text-p1">Soft Drink</p>
+                    </div>
+                    <div class="rounded-xl h-16 px-5 shadow-lg flex gap-3 justify-center items-center">
+                        <i class="fa-solid fa-glass-water text-2xl"></i>
+                        <p class="text-p1">Tea</p>
+                    </div>
+                    <div class="rounded-xl h-16 px-5 shadow-lg flex gap-3 justify-center items-center">
+                        <i class="fa-solid fa-mug-hot text-2xl"></i>
+                        <p class="text-p1">Coffe</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <h4 class="mb-20">Menu</h4>
+
+                <div class="flex flex-wrap gap-x-10 gap-y-28">
+                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
+
+                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
+                            <img src="../assets/img/header/burger.png" alt="" class="">
+                            <h4 class="text-center">Burger</h4>
+                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
+                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 75.000</h5>
+                        </div>
+                    </div>
+                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
+
+                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[232px]">
+                            <img src="../assets/img/header/food-combo.png" alt="" class="">
+                            <h4 class="text-center mt-3">Food Combo</h4>
+                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
+                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 135.000</h5>
+                        </div>
+                    </div>
+                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
+
+                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[226px]">
+                            <img src="../assets/img/header/pizza.png" alt="" class="">
+                            <h4 class="text-center mt-8">Pizza</h4>
+                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
+                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 90.000</h5>
+                        </div>
+                    </div>
+                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
+
+                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
+                            <img src="../assets/img/header/cake.png" alt="">
+                            <h4 class="text-center">Cake</h4>
+                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
+                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 75.000</h5>
+                        </div>
+                    </div>
+                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
+
+                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
+                            <img src="../assets/img/header/burger.png" alt="" class="">
+                            <h4 class="text-center">Burger</h4>
+                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
+                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 75.000</h5>
+                        </div>
+                    </div>
+                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
+
+                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[232px]">
+                            <img src="../assets/img/header/food-combo.png" alt="" class="">
+                            <h4 class="text-center mt-3">Food Combo</h4>
+                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
+                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 135.000</h5>
+                        </div>
+                    </div>
+                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
+
+                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[226px]">
+                            <img src="../assets/img/header/pizza.png" alt="" class="">
+                            <h4 class="text-center mt-8">Pizza</h4>
+                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
+                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 90.000</h5>
+                        </div>
+                    </div>
+                    <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
+
+                        <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
+                            <img src="../assets/img/header/cake.png" alt="">
+                            <h4 class="text-center">Cake</h4>
+                            <p class="text-p1 text-center mt-[11px]">Mushroom Sauce</p>
+                            <h5 class="text-center mt-2"><span class="text-red-600">Rp</span> 75.000</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/7aa6d504e7.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

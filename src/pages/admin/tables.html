@@ -55,10 +55,26 @@
             </div>
 
             <div class="flex items-center justify-center gap-5 absolute bottom-5">
-                <img class="w-20 h-20 object-cover p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                    src="../../assets/img/farkhan.jpg" alt="Bordered avatar">
+                <button type="button" data-modal-target="farkhan" data-modal-toggle="farkhan"
+                    class="font-medium hover:underline">
+                    <img class="w-20 h-20 object-cover p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                        src="../../assets/img/farkhan.jpg" alt="Bordered avatar">
+                </button>
                 <h5>Farkhanudin</h5>
                 <a href="login.html"><i class="fa-solid fa-right-from-bracket text-2xl text-primary"></i></a>
+            </div>
+        </div>
+
+        <!-- Profile Modal -->
+        <div id="farkhan" tabindex="-1"
+            class="fixed bg-[rgba(0,0,0,0.5)] top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full max-h-full">
+            <div class="relative h-full">
+                <!-- Modal content -->
+                <div class="relative w-full h-full rounded-lg shadow bg-white">
+                    <div class="p-6 text-center h-full">
+                        <img src="../../assets/img/farkhan.jpg" class="h-full object-cover mx-auto" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -235,14 +251,57 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
-
     </div>
+
+    <!-- Footer -->
+    <footer class="w-full min-h-[429px] bg-[#FAFAFF] pb-20 px-10 lg:w-[calc(100%-384px)] lg:ml-auto xl:px-[180px]">
+        <div class="flex gap-x-[154px] flex-wrap">
+            <div class="mt-[57px] w-full md:w-[375px]">
+                <img src="../../assets/img/logo.png" class="w-[181px] mb-[30px]" alt="">
+                <p class="text-p1 text-gray mb-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Commodo
+                    libero viverra dapibus odio sit
+                    malesuada in quis. Arcu tristique elementum viverra integer id.</p>
+                <div class="flex gap-[18px]">
+                    <a href="https://facebook.com" target="_blank"
+                        class="w-[42px] h-[42px] rounded-full bg-[#F5DDC4] flex justify-center items-center">
+                        <img src="../../assets/img/footer/facebook.png" class="w-[22px]" alt="">
+                    </a>
+                    <a href="https://twitter.com" target="_blank"
+                        class="w-[42px] h-[42px] rounded-full bg-[#F5DDC4] flex justify-center items-center">
+                        <img src="../../assets/img/footer/twitter.png" class="w-[22px]" alt="">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank"
+                        class="w-[42px] h-[42px] rounded-full bg-[#F5DDC4] flex justify-center items-center">
+                        <img src="../../assets/img/footer/linkedin.png" class="w-[22px]" alt="">
+                    </a>
+                    <a href="https://instagram.com" target="_blank"
+                        class="w-[42px] h-[42px] rounded-full bg-[#F5DDC4] flex justify-center items-center">
+                        <img src="../../assets/img/footer/instagram.png" class="w-[22px]" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-[95px] w-full md:grow md:basis-0">
+                <h4 class="mb-[68px]">Opening Restaurant</h4>
+
+                <p class="text-p1 text-gray mb-3">Sat-Wet: 09:00am-10:00PM</p>
+                <p class="text-p1 text-gray mb-3">Thursdayt: 09:00am-11:00PM</p>
+                <p class="text-p1 text-gray">Friday: 09:00am-8:00PM</p>
+            </div>
+
+            <div class="mt-[95px] w-full md:grow md:basis-0">
+                <h4 class="mb-[68px]">Contact Us</h4>
+
+                <p class="text-p1 text-gray mb-3">1234 Country Club Ave</p>
+                <p class="text-p1 text-gray mb-3">NC 123456, London, UK</p>
+                <p class="text-p1 text-gray">+0123 456 7891</p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://kit.fontawesome.com/7aa6d504e7.js" crossorigin="anonymous"></script>

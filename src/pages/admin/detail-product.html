@@ -55,12 +55,29 @@
             </div>
 
             <div class="flex items-center justify-center gap-5 absolute bottom-5">
-                <img class="w-20 h-20 object-cover p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                    src="../../assets/img/farkhan.jpg" alt="Bordered avatar">
+                <button type="button" data-modal-target="farkhan" data-modal-toggle="farkhan"
+                    class="font-medium hover:underline">
+                    <img class="w-20 h-20 object-cover p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                        src="../../assets/img/farkhan.jpg" alt="Bordered avatar">
+                </button>
                 <h5>Farkhanudin</h5>
                 <a href="login.html"><i class="fa-solid fa-right-from-bracket text-2xl text-primary"></i></a>
             </div>
         </div>
+
+        <!-- Profile Modal -->
+        <div id="farkhan" tabindex="-1"
+            class="fixed bg-[rgba(0,0,0,0.5)] top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full max-h-full">
+            <div class="relative h-full">
+                <!-- Modal content -->
+                <div class="relative w-full h-full rounded-lg shadow bg-white">
+                    <div class="p-6 text-center h-full">
+                        <img src="../../assets/img/farkhan.jpg" class="h-full object-cover mx-auto" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Content -->
         <div class="lg:pl-96">
             <div class="flex flex-wrap justify-center items-center mt-20 gap-20">
@@ -139,7 +156,7 @@
     </footer>
 
     <!-- Flowbite -->
-    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/7aa6d504e7.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>

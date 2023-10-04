@@ -76,17 +76,16 @@
             </div>
         </div>
 
-        <div class="w-[1560px]  mt-10">
+        <div class="w-full mt-10">
             <h4 class="mb-10">Menu</h4>
 
-            <div class="flex flex-wrap my-[57px] gap-x-[49px] gap-y-[58px]">
+            <div class="flex flex-wrap justify-center my-[57px] gap-x-[49px] gap-y-[58px]">
                 <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                    <a href="./detail-product.html" class="absolute top-4 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-pen text-primary text-xl"></i>
-                    </a>
-                    <a href="./detail-product.html" class="absolute top-16 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
-                    </a>
+                    <button data-dropdown-placement="bottom" id="dropdownHoverButton"
+                        data-dropdown-toggle="dropdownHover"
+                        class="absolute top-4 right-4 bg-white px-4 py-[9px] rounded-full">
+                        <i class="fa-solid fa-caret-down text-primary text-2xl"></i>
+                    </button>
                     <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/1.jpg" alt="">
                     <div class="px-[33px] pb-[44px] pt-4">
                         <div class="mb-4">
@@ -98,12 +97,27 @@
                             <p class="text-p1">Rp 75.000</p>
                         </div>
                     </div>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdownHover" class="z-10 hidden">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                            <li>
+                                <a href="./detail-product.html"
+                                    class="absolute top-0 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                    <i class="fa-solid fa-pen text-primary text-xl"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./detail-product.html"
+                                    class="absolute top-12 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                    <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                    <a href="./detail-product.html" class="absolute top-4 right-4 bg-white px-4 py-[9px] rounded-full">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </a>
                     <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/2.jpg" alt="">
                     <div class="px-[33px] pb-[44px] pt-4">
                         <div class="mb-4">
@@ -118,12 +132,6 @@
                 </div>
 
                 <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                    <a href="./detail-product.html" class="absolute top-4 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-pen text-primary text-xl"></i>
-                    </a>
-                    <a href="./detail-product.html" class="absolute top-16 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
-                    </a>
                     <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/3.jpg" alt="">
                     <div class="px-[33px] pb-[44px] pt-4">
                         <div class="mb-4">
@@ -138,12 +146,6 @@
                 </div>
 
                 <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                    <a href="./detail-product.html" class="absolute top-4 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-pen text-primary text-xl"></i>
-                    </a>
-                    <a href="./detail-product.html" class="absolute top-16 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
-                    </a>
                     <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/4.jpg" alt="">
                     <div class="px-[33px] pb-[44px] pt-4">
                         <div class="mb-4">
@@ -158,12 +160,6 @@
                 </div>
 
                 <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                    <a href="./detail-product.html" class="absolute top-4 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-pen text-primary text-xl"></i>
-                    </a>
-                    <a href="./detail-product.html" class="absolute top-16 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
-                    </a>
                     <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/5.jpg" alt="">
                     <div class="px-[33px] pb-[44px] pt-4">
                         <div class="mb-4">
@@ -178,12 +174,6 @@
                 </div>
 
                 <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                    <a href="./detail-product.html" class="absolute top-4 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-pen text-primary text-xl"></i>
-                    </a>
-                    <a href="./detail-product.html" class="absolute top-16 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
-                    </a>
                     <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/6.jpg" alt="">
                     <div class="px-[33px] pb-[44px] pt-4">
                         <div class="mb-4">
@@ -198,12 +188,6 @@
                 </div>
 
                 <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                    <a href="./detail-product.html" class="absolute top-4 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-pen text-primary text-xl"></i>
-                    </a>
-                    <a href="./detail-product.html" class="absolute top-16 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
-                    </a>
                     <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/1.jpg" alt="">
                     <div class="px-[33px] pb-[44px] pt-4">
                         <div class="mb-4">
@@ -218,12 +202,6 @@
                 </div>
 
                 <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                    <a href="./detail-product.html" class="absolute top-4 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-pen text-primary text-xl"></i>
-                    </a>
-                    <a href="./detail-product.html" class="absolute top-16 right-4 bg-white px-3 py-[9px] rounded-full">
-                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
-                    </a>
                     <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/2.jpg" alt="">
                     <div class="px-[33px] pb-[44px] pt-4">
                         <div class="mb-4">
@@ -236,14 +214,18 @@
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
 
-        <div class="w-[1560px] mt-20">
+        <div class="w-full mt-20">
             <h4 class="mb-5">Table</h4>
             <div>
                 <button data-modal-target="add-modal" data-modal-toggle="add-modal" type="button"
-                    class="px-[29px] py-[14px] bg-primary rounded-[35px] flex ml-auto w-[130px] text-white">Add Table</button>
+                    class="px-[29px] py-[14px] bg-primary rounded-[35px] flex ml-auto w-[130px] text-white">Add
+                    Table</button>
                 <div class="relative overflow-x-auto shadow-md mt-5 mb-10 rounded-xl">
                     <table class="w-full text-sm text-left">
                         <thead class="text-l uppercase bg-primary">
@@ -266,12 +248,12 @@
                                     King The Land
                                 </td>
                                 <td class="px-6 py-4 gap-8 flex justify-center">
-                                    <button data-modal-target="edit-modal"
-                                        data-modal-toggle="edit-modal" type="button"
-                                        class="font-medium text-blue-600 hover:underline"><i class="fa-solid fa-pen text-primary text-2xl"></i></button>
+                                    <button data-modal-target="edit-modal" data-modal-toggle="edit-modal" type="button"
+                                        class="font-medium hover:underline"><i
+                                            class="fa-solid fa-pen text-primary text-2xl"></i></button>
                                     <button type="button" data-modal-target="popup-modal"
-                                        data-modal-toggle="popup-modal"
-                                        class="font-medium text-primary hover:underline"><i class="fa-solid fa-trash text-red-600 text-2xl"></i></button>
+                                        data-modal-toggle="popup-modal" class="font-medium hover:underline"><i
+                                            class="fa-solid fa-trash text-red-600 text-2xl"></i></button>
                                 </td>
                             </tr>
                             <tr class="bg-white border-b text-center">
@@ -281,12 +263,12 @@
                                     Queen The Land
                                 </td>
                                 <td class="px-6 py-4 justify-center gap-8 flex">
-                                    <button data-modal-target="edit-modal"
-                                        data-modal-toggle="edit-modal" type="button"
-                                        class="font-medium text-blue-600 hover:underline"><i class="fa-solid fa-pen text-primary text-2xl"></i></button>
+                                    <button data-modal-target="edit-modal" data-modal-toggle="edit-modal" type="button"
+                                        class="font-medium  hover:underline"><i
+                                            class="fa-solid fa-pen text-primary text-2xl"></i></button>
                                     <button type="button" data-modal-target="popup-modal"
-                                        data-modal-toggle="popup-modal"
-                                        class="font-medium text-primary hover:underline"><i class="fa-solid fa-trash text-red-600 text-2xl"></i></button>
+                                        data-modal-toggle="popup-modal" class="font-medium hover:underline"><i
+                                            class="fa-solid fa-trash text-red-600 text-2xl"></i></button>
                                 </td>
                             </tr>
                             <tr class="bg-white border-b text-center">
@@ -296,12 +278,12 @@
                                     Forest in City
                                 </td>
                                 <td class="px-6 py-4 justify-center gap-8 flex">
-                                    <button data-modal-target="edit-modal"
-                                        data-modal-toggle="edit-modal" type="button"
-                                        class="font-medium text-blue-600 hover:underline"><i class="fa-solid fa-pen text-primary text-2xl"></i></button>
+                                    <button data-modal-target="edit-modal" data-modal-toggle="edit-modal" type="button"
+                                        class="font-medium  hover:underline"><i
+                                            class="fa-solid fa-pen text-primary text-2xl"></i></button>
                                     <button type="button" data-modal-target="popup-modal"
-                                        data-modal-toggle="popup-modal"
-                                        class="font-medium text-primary hover:underline"><i class="fa-solid fa-trash text-red-600 text-2xl"></i></button>
+                                        data-modal-toggle="popup-modal" class="font-medium hover:underline"><i
+                                            class="fa-solid fa-trash text-red-600 text-2xl"></i></button>
                                 </td>
                             </tr>
                         </tbody>

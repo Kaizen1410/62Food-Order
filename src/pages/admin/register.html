@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>62 Food Order</title>
+    <link rel="icon" href="../../assets/img/logo.png">
+    <link rel="stylesheet" href="../../css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="justify-center items-center text-center min-h-screen flex">
+        <div class="bg-white rounded-[35px] shadow-2xl p-8 w-[450px]">
+            <div class="mx-auto w-[80px] h-[80px] rounded-xl mb-3">
+                <div class="flex gap-2 items-end justify-center">
+                    <img src="../../assets/img/logo.png" class="w-[94px]" alt="">
+                    <h4 class="text-primary">Admin</h4>
+                </div>
+            </div>
+            <h1 class="text-center text-2xl mb-5">Welcome To 62 Food Order</h1>
+            <form>
+                <label class="cursor-pointer">
+                    <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png"
+                        class="w-52 mb-10  mx-auto" alt="">
+                    <input hidden type="file">
+                </label>
+                <h5 class="text-start">Email</h5>
+                <div class="mb-5 relative">
+                    <label class="absolute top-1/2 -translate-y-1/2 left-3" for=""><i
+                            class="fa-solid fa-envelope"></i></label>
+                    <input type="text" class="rounded-lg p-3 pl-9 w-full shadow-search" name="email" placeholder="Email"
+                        required="required">
+                </div>
+                <h5 class="text-start">Password</h5>
+                <div class="mb-5 relative">
+                    <label class="absolute top-1/2 -translate-y-1/2 left-3" for=""><i
+                            class="fa-solid fa-key"></i></label>
+                    <input type="password" class="rounded-lg p-3 pl-9 w-full shadow-search" name="password"
+                        placeholder="Password" required="required">
+                </div>
+                <h5 class="text-start">Confirm Password</h5>
+                <div class="mb-5 relative">
+                    <label class="absolute top-1/2 -translate-y-1/2 left-3" for=""><i
+                            class="fa-solid fa-key"></i></label>
+                    <input type="password" class="rounded-lg p-3 pl-9 w-full shadow-search" name="confirm-password"
+                        placeholder="Password" required="required">
+                </div>
+                <h5 class="text-start">Select</h5>
+                <div class="flex justify-center gap-5 mb-5">
+                    <div>
+
+                        <input type="radio" id="Join" name="fav_language" value="Join">
+                        <label for="join">Join</label><br>
+                    </div>
+                    <div>
+
+                        <input type="radio" id="Create" name="fav_language" value="Create">
+                        <label for="create">Create</label><br>
+                    </div>
+                </div>
+
+                <a href="."
+                    class="block btn-order text-white rounded-2xl py-3 w-full text-base font-bold cursor-pointer ">Submit</a>
+            </form>
+            <a href="./login.html"
+                class="block  text-black rounded-2xl py-3 w-full text-base font-bold cursor-pointer mt-5">Back to
+                login</a>
+        </div>
+    </div>
+    </div>
+    <script src="https://kit.fontawesome.com/7aa6d504e7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

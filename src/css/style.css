@@ -69,3 +69,19 @@ h5 {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+input {
+    outline-width: 0 !important;
+    outline-offset: 0 !important;
+    outline-color: unset !important;
+    border-width: 0 !important;
+    border-color: unset !important;
+}
+
+input:focus {
+    outline-width: 0 !important;
+    outline-offset: 0 !important;
+    outline-color: unset !important;
+    border-width: 0 !important;
+    border-color: unset !important;
+}

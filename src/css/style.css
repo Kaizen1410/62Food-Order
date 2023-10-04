@@ -70,7 +70,7 @@ h5 {
     background: #555;
 }
 
-input {
+input[type="search"] {
     outline-width: 0 !important;
     outline-offset: 0 !important;
     outline-color: unset !important;
@@ -78,7 +78,7 @@ input {
     border-color: unset !important;
 }
 
-input:focus {
+input[type="search"]:focus {
     outline-width: 0 !important;
     outline-offset: 0 !important;
     outline-color: unset !important;

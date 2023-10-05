@@ -43,18 +43,18 @@
                 <h4 class="text-primary">Rp 500.000</h4>
             </div>
 
-            <div class="w-full h-[1px] bg-gray my-10"></div>
+            <div class="w-full h-[1px] bg-gray my-5"></div>
 
             <div>
-                <a href="." class="flex gap-3 mb-3 p-5 hover:bg-slate-100 rounded-lg">
+                <a href="." class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
                     <i class="fa-solid fa-house text-2xl"></i>
                     <p class="text-p1">Dashboard</p>
                 </a>
-                <a href="./products.html" class="flex gap-3 mb-3 p-5 bg-primary text-white rounded-lg">
+                <a href="./products.html" class="flex gap-3 mb-2 p-4 bg-primary text-white rounded-lg">
                     <i class="fa-solid fa-box-open text-2xl"></i>
                     <p class="text-p1">Products</p>
                 </a>
-                <a href="./tables.html" class="flex gap-3 mb-3 p-5 hover:bg-slate-100 rounded-lg">
+                <a href="./tables.html" class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
                     <i class="fa-solid fa-table-cells-large text-2xl"></i>
                     <p class="text-p1">Tables</p>
                 </a>
@@ -126,8 +126,7 @@
                 <!-- Content Menu -->
                 <div class="flex flex-wrap justify-center my-[57px] gap-x-[49px] gap-y-[58px]">
                     <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                        <button data-dropdown-placement="bottom" id="dropdownHoverButton"
-                            data-dropdown-toggle="dropdownHover"
+                        <button data-dropdown-placement="bottom" data-dropdown-toggle="dropdown-1"
                             class="absolute top-4 right-4 bg-white px-4 py-[9px] rounded-full">
                             <i class="fa-solid fa-caret-down text-primary text-2xl"></i>
                         </button>
@@ -144,9 +143,8 @@
                         </div>
 
                         <!-- Dropdown menu -->
-                        <div id="dropdownHover" class="z-10 hidden">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdownHoverButton">
+                        <div id="dropdown-1" class="z-10 hidden">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                                 <li>
                                     <a href="./detail-product.html"
                                         class="absolute top-0 -right-[21px] bg-white px-3 py-[9px] rounded-full">
@@ -164,6 +162,10 @@
                     </div>
 
                     <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
+                        <button data-dropdown-placement="bottom" data-dropdown-toggle="dropdown-2"
+                            class="absolute top-4 right-4 bg-white px-4 py-[9px] rounded-full">
+                            <i class="fa-solid fa-caret-down text-primary text-2xl"></i>
+                        </button>
                         <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/2.jpg" alt="">
                         <div class="px-[33px] pb-[44px] pt-4">
                             <div class="mb-4">
@@ -175,9 +177,31 @@
                                 <p class="text-p1">Rp 150.000</p>
                             </div>
                         </div>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-2" class="z-10 hidden">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-0 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-pen text-primary text-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-12 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
+                        <button data-dropdown-placement="bottom" data-dropdown-toggle="dropdown-3"
+                            class="absolute top-4 right-4 bg-white px-4 py-[9px] rounded-full">
+                            <i class="fa-solid fa-caret-down text-primary text-2xl"></i>
+                        </button>
                         <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/3.jpg" alt="">
                         <div class="px-[33px] pb-[44px] pt-4">
                             <div class="mb-4">
@@ -189,9 +213,31 @@
                                 <p class="text-p1">Rp 75.000</p>
                             </div>
                         </div>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-3" class="z-10 hidden">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-0 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-pen text-primary text-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-12 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
+                        <button data-dropdown-placement="bottom" data-dropdown-toggle="dropdown-4"
+                            class="absolute top-4 right-4 bg-white px-4 py-[9px] rounded-full">
+                            <i class="fa-solid fa-caret-down text-primary text-2xl"></i>
+                        </button>
                         <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/4.jpg" alt="">
                         <div class="px-[33px] pb-[44px] pt-4">
                             <div class="mb-4">
@@ -203,9 +249,31 @@
                                 <p class="text-p1">Rp 200.000</p>
                             </div>
                         </div>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-4" class="z-10 hidden">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-0 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-pen text-primary text-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-12 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
+                        <button data-dropdown-placement="bottom" data-dropdown-toggle="dropdown-5"
+                            class="absolute top-4 right-4 bg-white px-4 py-[9px] rounded-full">
+                            <i class="fa-solid fa-caret-down text-primary text-2xl"></i>
+                        </button>
                         <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/5.jpg" alt="">
                         <div class="px-[33px] pb-[44px] pt-4">
                             <div class="mb-4">
@@ -217,9 +285,31 @@
                                 <p class="text-p1">Rp 150.000</p>
                             </div>
                         </div>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-5" class="z-10 hidden">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-0 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-pen text-primary text-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-12 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
+                        <button data-dropdown-placement="bottom" data-dropdown-toggle="dropdown-6"
+                            class="absolute top-4 right-4 bg-white px-4 py-[9px] rounded-full">
+                            <i class="fa-solid fa-caret-down text-primary text-2xl"></i>
+                        </button>
                         <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/6.jpg" alt="">
                         <div class="px-[33px] pb-[44px] pt-4">
                             <div class="mb-4">
@@ -231,33 +321,23 @@
                                 <p class="text-p1">Rp 75.000</p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                        <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/1.jpg" alt="">
-                        <div class="px-[33px] pb-[44px] pt-4">
-                            <div class="mb-4">
-                                <h4>Gyro Sandwich</h4>
-                            </div>
-                            <div class="flex justify-between">
-                                <a href="./detail-product.html"
-                                    class="px-[29px] py-[14px] bg-primary rounded-[35px] text-white">Detail Product</a>
-                                <p class="text-p1">Rp 75.000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-[350px] h-[350px] rounded-[35px] shadow-product overflow-hidden relative">
-                        <img class="w-full h-[210px] object-cover" src="../../assets/img/popular/2.jpg" alt="">
-                        <div class="px-[33px] pb-[44px] pt-4">
-                            <div class="mb-4">
-                                <h4>Enchilade</h4>
-                            </div>
-                            <div class="flex justify-between">
-                                <a href="./detail-product.html"
-                                    class="px-[29px] py-[14px] bg-primary rounded-[35px] text-white">Detail Product</a>
-                                <p class="text-p1">Rp 75.000</p>
-                            </div>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-6" class="z-10 hidden">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-0 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-pen text-primary text-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail-product.html"
+                                        class="absolute top-12 -right-[21px] bg-white px-3 py-[9px] rounded-full">
+                                        <i class="fa-solid fa-trash-can text-xl text-red-600"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

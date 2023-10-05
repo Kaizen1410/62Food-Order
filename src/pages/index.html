@@ -34,7 +34,7 @@
 
         <!-- Header -->
         <div class="flex flex-wrap justify-between">
-            <div class="w-[630px] mt-36">
+            <div class="w-full xl:w-[630px] mt-36">
                 <h1 class="">The Fastest Service In <span class="text-h1 text-orange-400">Your City</span></h1>
                 <p class="text-p1 mt-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo, sed proin
                     amet a
@@ -49,7 +49,7 @@
             </div>
 
             <div class="mx-auto xl:mx-0 w-[445px] h-[837px] rounded-[30px] mt-10 food-slider relative">
-                <div class="absolute top-[134px] left-[-129px] flex flex-wrap gap-x-5 gap-y-[100px]">
+                <div class="absolute top-[134px] left-[-129px] w-[703px] flex flex-wrap justify-center xl:justify-start gap-x-5 gap-y-[100px]">
                     <div class="w-[258px] h-[275px] rounded-[30px] bg-white relative shadow-food-slider-item">
 
                         <div class="top-[-85px] absolute left-1/2 -translate-x-1/2 w-[220px]">
@@ -435,7 +435,7 @@
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 p-10">
                 <div class="flex justify-between mb-3">
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                        Customer Detail
+                        Order Detail
                     </h3>
                     <button type="button"
                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -448,9 +448,59 @@
                         <span class="sr-only">Close modal</span>
                     </button>
                 </div>
-                <input type="text" class="w-full shadow-search rounded-[10px] mb-5 p-3" placeholder="Full name">
-                <button class="w-full py-4 rounded-2xl text-white btn-order text-h5">
-                    Order
+
+                <form>
+                    <input type="text" class="w-full shadow-search rounded-[10px] mb-5 p-3" placeholder="Full name" required>
+                    <input type="text" class="w-full shadow-search rounded-[10px] mb-5 p-3" placeholder="Voucher Code (optional)">
+    
+                    <button type="button" class="w-full py-4 rounded-2xl text-white btn-order text-h5" data-modal-target="priceModal" data-modal-toggle="priceModal">
+                        Next
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Detail modal -->
+    <div id="priceModal" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 bg-[rgba(0,0,0,0.5)] hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 p-10">
+                <div class="flex justify-between mb-3">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Payment Details
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="priceModal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between">
+                        <p class="text-p1">Price</p>
+                        <p class="text-p1">575000</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-p1">Voucher</p>
+                        <p class="text-p1">-10000</p>
+                    </div>
+                    <div class="h-[1px] w-full bg-gray my-4"></div>
+                    <div class="flex justify-between">
+                        <p class="text-p1 font-bold">Total Payment</p>
+                        <p class="text-p1 font-bold">565000</p>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-2xl text-white btn-order text-h5">
+                    Checkout
                 </button>
             </div>
         </div>

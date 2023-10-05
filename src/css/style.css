@@ -46,6 +46,10 @@ h5 {
     background: linear-gradient(180deg, #EFAB68 0%, #F48E28 100%);
 }
 
+.btn-order:hover {
+    background: linear-gradient(180deg, #d89857 0%, #d77b1e 100%);
+}
+
 .food-slider {
     background: linear-gradient(200deg, #D9D9D9 -18.39%, rgba(217, 217, 217, 0.00) 89.51%);
 }

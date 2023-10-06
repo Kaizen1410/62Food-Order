@@ -74,7 +74,7 @@ h5 {
     background: #555;
 }
 
-input[type="search"], input[type="text"], input[type="password"] {
+input[type="search"], input[type="text"], input[type="password"], textarea, input[type="number"], select, input[type="file"] {
     outline-width: 0 !important;
     outline-offset: 0 !important;
     outline-color: unset !important;

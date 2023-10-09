@@ -40,3 +40,16 @@ function plusQuantity(priceId, quantityId, amountId) {
     const totalAmount4 = parseInt(document.querySelector('#total-amount-4').textContent);
     document.querySelector('#total-amount').textContent = totalAmount1 + totalAmount2 + totalAmount3 + totalAmount4;
 }
+
+function toggleSidebar() {
+    const sidebarEl = document.querySelector('#sidebar');
+
+    sidebarEl.classList.toggle('w-0');
+    const open = sidebarEl.classList.toggle('w-96');
+    
+    if(open) {
+        document.querySelector('#backdrop').innerHTML = `<div class="lg:hidden bg-[rgba(0,0,0,0.5)] fixed top-0 left-0 h-full w-full z-40" onclick="toggleSidebar()"></div>`
+    } else {
+        document.querySelector('#backdrop').innerHTML = ''
+    }
+}

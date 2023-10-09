@@ -248,7 +248,8 @@
                     <div class="flex justify-between items-start gap-4 mb-5">
                         <h3>Gyro Sandwich</h3>
                         <button
-                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white">Add
+                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white"
+                            data-modal-target="myOrderModal" data-modal-toggle="myOrderModal">Add
                             To
                             Cart</button>
                     </div>
@@ -494,6 +495,13 @@
                         <option value="1">King The Land</option>
                         <option value="2">Queen The Land</option>
                         <option value="3">Forest in City</option>
+                    </select>
+                    <select id="payment"
+                        class="rounded-[10px] mb-5 p-3 w-full grow basis-0 shadow-search cursor-pointer focus:ring-primary focus:border-primary"
+                        required>
+                        <option selected hidden>Choose Payment Option</option>
+                        <option value="1">Cash</option>
+                        <option value="2">Cashless</option>
                     </select>
                     <input type="text"
                         class="w-full shadow-search rounded-[10px] mb-5 p-3 focus:ring-primary focus:border-primary"

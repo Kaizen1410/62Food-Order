@@ -237,7 +237,8 @@
                                     </div>
                                     <div class="flex justify-between">
                                         <button
-                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white">Add
+                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white"
+                                            data-modal-target="myOrderModal" data-modal-toggle="myOrderModal">Add
                                             To
                                             Cart</button>
                                         <div>
@@ -261,7 +262,8 @@
                                     </div>
                                     <div class="flex justify-between">
                                         <button
-                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white">Add
+                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white"
+                                            data-modal-target="myOrderModal" data-modal-toggle="myOrderModal">Add
                                             To
                                             Cart</button>
                                         <p class="text-p1">Rp 150.000</p>
@@ -281,7 +283,8 @@
                                     </div>
                                     <div class="flex justify-between">
                                         <button
-                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white">Add
+                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white"
+                                            data-modal-target="myOrderModal" data-modal-toggle="myOrderModal">Add
                                             To
                                             Cart</button>
                                         <p class="text-p1">Rp 75.000</p>
@@ -301,7 +304,8 @@
                                     </div>
                                     <div class="flex justify-between">
                                         <button
-                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white">Add
+                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white"
+                                            data-modal-target="myOrderModal" data-modal-toggle="myOrderModal">Add
                                             To
                                             Cart</button>
                                         <p class="text-p1">Rp 200.000</p>
@@ -321,7 +325,8 @@
                                     </div>
                                     <div class="flex justify-between">
                                         <button
-                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white">Add
+                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white"
+                                            data-modal-target="myOrderModal" data-modal-toggle="myOrderModal">Add
                                             To
                                             Cart</button>
                                         <p class="text-p1">Rp 150.000</p>
@@ -341,7 +346,8 @@
                                     </div>
                                     <div class="flex justify-between">
                                         <button
-                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white">Add
+                                            class="px-[29px] py-[14px] bg-primary hover:bg-primary-hover rounded-[35px] text-white"
+                                            data-modal-target="myOrderModal" data-modal-toggle="myOrderModal">Add
                                             To
                                             Cart</button>
                                         <p class="text-p1">Rp 75.000</p>
@@ -579,6 +585,13 @@
                         <option value="1">King The Land</option>
                         <option value="2">Queen The Land</option>
                         <option value="3">Forest in City</option>
+                    </select>
+                    <select id="payment"
+                        class="rounded-[10px] mb-5 p-3 w-full grow basis-0 shadow-search cursor-pointer focus:ring-primary focus:border-primary"
+                        required>
+                        <option selected hidden>Choose Payment Option</option>
+                        <option value="1">Cash</option>
+                        <option value="2">Cashless</option>
                     </select>
                     <input type="text" class="w-full shadow-search rounded-[10px] mb-5 p-3 focus:ring-primary focus:border-primary"
                         placeholder="Voucher Code (optional)">

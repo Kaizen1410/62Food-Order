@@ -10,62 +10,70 @@
 </head>
 
 <body>
+    <div id="backdrop"></div>
     <!-- Sidebar -->
-    <div class="fixed top-0 left-0 overflow-x-hidden w-0 lg:w-96 h-full lg:p-8 shadow-lg bg-white">
-        <label class="relative w-[393px] rounded-[10px]">
-            <img src="../../assets/icon/store-solid.svg" alt=""
-                class="absolute left-[24px] top-1/2 -translate-y-1/2 w-[25px]">
-            <input type="text"
-                class="pl-[71px] pr-[94px] py-[14px] w-full focus:outline-none text-h5 rounded-lg shadow-search focus:ring-primary focus:border-primary"
-                placeholder="Enter Store Name" value="62 Store" required="required">
-        </label>
-
-        <div class="mt-16">
-            <p class="text-p1 mb-2">Earnings</p>
-            <h4 class="text-primary">Rp 500.000</h4>
-        </div>
-
-        <div class="w-full h-[1px] bg-gray my-10"></div>
-
-        <div>
-            <a href="." class="flex gap-3 mb-3 p-5 hover:bg-slate-100 rounded-lg">
-                <i class="fa-solid fa-house text-2xl"></i>
-                <p class="text-p1">Dashboard</p>
-            </a>
-            <a href="./products.html" class="flex gap-3 mb-3 p-5 bg-primary text-white rounded-lg">
-                <i class="fa-solid fa-box-open text-2xl"></i>
-                <p class="text-p1">Products</p>
-            </a>
-            <a href="./tables.html" class="flex gap-3 mb-3 p-5 hover:bg-slate-100  rounded-lg">
-                <i class="fa-solid fa-utensils text-2xl"></i>
-                <p class="text-p1">Tables</p>
-            </a>
-            <a href="./orders.html" class="flex gap-3 mb-2 p-4  hover:bg-slate-100 rounded-lg">
-                <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                <p class="text-p1">Orders</p>
-            </a>
-        </div>
-
-        <div class="flex items-center justify-center gap-5 absolute bottom-5">
-            <button type="button" data-modal-target="farkhan" data-modal-toggle="farkhan"
-                class="font-medium hover:underline">
-                <img class="w-20 h-20 object-cover p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                    src="../../assets/img/farkhan.jpg" alt="Bordered avatar">
-            </button>
-            <h5>Farkhanudin</h5>
-            <a href="login.html"><i class="fa-solid fa-right-from-bracket text-2xl text-primary"></i></a>
+    <div id="sidebar" class="fixed top-0 left-0 overflow-x-hidden w-0 lg:w-96 h-full shadow-lg z-50 bg-white">
+        <div class="p-8 h-full w-full">
+            <label class="relative w-[393px] rounded-[10px]">
+                <img src="../../assets/icon/store-solid.svg" alt=""
+                    class="absolute left-[24px] top-1/2 -translate-y-1/2 w-[25px]">
+                <input type="text"
+                    class="pl-[71px] pr-[94px] py-[14px] w-full focus:outline-none text-h5 rounded-lg shadow-search"
+                    placeholder="Enter Store Name" value="62 Store" required="required">
+            </label>
+    
+            <div class="mt-16">
+                <p class="text-p1 mb-2">Earnings</p>
+                <h4 class="text-primary">Rp 500.000</h4>
+            </div>
+    
+            <div class="w-full h-[1px] bg-gray my-5"></div>
+    
+            <div>
+                <a href="." class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
+                    <i class="fa-solid fa-house text-2xl"></i>
+                    <p class="text-p1">Dashboard</p>
+                </a>
+                <a href="./products.html" class="flex gap-3 mb-2 p-4 bg-primary text-white rounded-lg hover:bg-primary-hover">
+                    <i class="fa-solid fa-box-open text-2xl"></i>
+                    <p class="text-p1">Products</p>
+                </a>
+                <a href="./tables.html" class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
+                    <i class="fa-solid fa-utensils text-2xl"></i>
+                    <p class="text-p1">Tables</p>
+                </a>
+                <a href="./orders.html" class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
+                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                    <p class="text-p1">Orders</p>
+                </a>
+            </div>
+    
+            <div class="flex items-center justify-center gap-5 absolute bottom-5">
+                <button type="button" data-modal-target="farkhan" data-modal-toggle="farkhan"
+                    class="font-medium hover:underline">
+                    <img class="w-20 h-20 object-cover p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                        src="../../assets/img/farkhan.jpg" alt="Bordered avatar">
+                </button>
+                <h5>Farkhanudin</h5>
+                <a href="login.html"><i class="fa-solid fa-right-from-bracket text-2xl text-primary"></i></a>
+            </div>
         </div>
     </div>
 
     <div class="lg:pl-96">
         <div class="container mb-[135px] mx-auto px-5 lg:px-10">
             <!-- Navbar -->
-            <nav class="mt-[29px] w-full lg:w-[calc(100%-384px)] h-[65px] ml-auto bg-white z-40">
+            <nav class="mt-[29px] w-full h-[65px] bg-white z-40">
 
                 <div class="flex h-full justify-between items-center">
-                    <div class="flex gap-2 items-end">
-                        <img src="../../assets/img/logo.png" class="w-[94px]" alt="">
-                        <h4 class="text-primary">Admin</h4>
+                    <div class="flex items-center gap-2">
+                        <button class="px-4 py-3 rounded-2xl lg:hidden hover:bg-slate-100" onclick="toggleSidebar()">
+                            <i class="fa-solid fa-bars text-h4"></i>
+                        </button>
+                        <a href="." class="flex gap-2 items-end">
+                            <img src="../../assets/img/logo.png" class="w-[94px]" alt="">
+                            <h4 class="text-primary">Admin</h4>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -238,7 +246,7 @@
     <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/7aa6d504e7.js" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>

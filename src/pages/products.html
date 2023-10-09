@@ -144,7 +144,7 @@
                     <label class="relative w-[393px] h-full shadow-search rounded-[10px]">
                         <img src="../assets/icon/search.svg" alt=""
                             class="absolute left-[24px] top-1/2 -translate-y-1/2 w-[25px]">
-                        <input type="search" class="pl-[71px] pr-[94px] py-[14px] h-full w-full text-h5 rounded-[10px]"
+                        <input type="search" class="pl-[71px] pr-[94px] py-[14px] h-full w-full text-h5 rounded-[10px] focus:ring-primary focus:border-primary"
                             placeholder="Search">
 
                         <div class="absolute right-[86px] top-[14px] h-[37px] w-[1px] bg-[#ADADAD]"></div>
@@ -570,10 +570,19 @@
                 </div>
 
                 <form>
-                    <input type="text" class="w-full shadow-search rounded-[10px] mb-5 p-3" placeholder="Full name"
+                    <input type="text" class="w-full shadow-search rounded-[10px] mb-5 p-3 focus:ring-primary focus:border-primary" placeholder="Full name"
                         required>
-                    <input type="text" class="w-full shadow-search rounded-[10px] mb-5 p-3"
+                    <select id="table"
+                        class="rounded-[10px] mb-5 p-3 w-full grow basis-0 shadow-search cursor-pointer focus:ring-primary focus:border-primary"
+                        required>
+                        <option selected hidden>Choose a Table</option>
+                        <option value="1">King The Land</option>
+                        <option value="2">Queen The Land</option>
+                        <option value="3">Forest in City</option>
+                    </select>
+                    <input type="text" class="w-full shadow-search rounded-[10px] mb-5 p-3 focus:ring-primary focus:border-primary"
                         placeholder="Voucher Code (optional)">
+
 
                     <button type="button" class="w-full py-4 rounded-2xl text-white btn-order text-h5"
                         data-modal-target="priceModal" data-modal-toggle="priceModal">

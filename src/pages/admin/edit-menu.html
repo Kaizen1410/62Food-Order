@@ -12,46 +12,61 @@
 <body>
     <div id="backdrop"></div>
     <!-- Sidebar -->
-    <div id="sidebar" class="fixed top-0 left-0 overflow-x-hidden w-0 lg:w-96 h-full shadow-lg z-50 bg-white">
-        <div class="p-8 h-full w-full">
+    <div id="sidebar" class="fixed top-0 left-0 overflow-x-hidden w-0 lg:w-80 h-full shadow-lg z-50 bg-white">
+        <div class="p-5 h-full w-full">
             <label class="relative w-[393px] rounded-[10px]">
                 <img src="../../assets/icon/store-solid.svg" alt=""
                     class="absolute left-[24px] top-1/2 -translate-y-1/2 w-[25px]">
                 <input type="text"
-                    class="pl-[71px] pr-[94px] py-[14px] w-full focus:outline-none text-h5 rounded-lg shadow-search"
+                    class="pl-[71px] pr-10 py-[14px] w-full focus:outline-none text-h5 rounded-lg shadow-search"
                     placeholder="Enter Store Name" value="62 Store" required="required">
             </label>
-    
-            <div class="mt-16">
-                <p class="text-p1 mb-2">Earnings</p>
-                <h4 class="text-primary">Rp 500.000</h4>
-            </div>
-    
-            <div class="w-full h-[1px] bg-gray my-5"></div>
-    
-            <div>
-                <a href="." class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
-                    <i class="fa-solid fa-house text-2xl"></i>
-                    <p class="text-p1">Dashboard</p>
-                </a>
-                <a href="./products.html" class="flex gap-3 mb-2 p-4 bg-primary text-white rounded-lg hover:bg-primary-hover">
-                    <i class="fa-solid fa-box-open text-2xl"></i>
-                    <p class="text-p1">Products</p>
-                </a>
-                <a href="./tables.html" class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
-                    <i class="fa-solid fa-utensils text-2xl"></i>
-                    <p class="text-p1">Tables</p>
-                </a>
-                <a href="./orders.html" class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
-                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                    <p class="text-p1">Orders</p>
-                </a>
-                <a href="./tasks.html" class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
-                    <i class="fa-solid fa-fire-burner text-2xl"></i>
-                    <p class="text-p1">Tasks</p>
-                </a>
-            </div>
-    
+
+            <ul class="mt-16">
+                <li>
+                    <a href="." class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
+                        <i class="fa-solid fa-house text-2xl"></i>
+                        <p class="text-p1">Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./menus.html" class="flex gap-3 mb-2 p-4 bg-primary text-white rounded-lg hover:bg-primary-hover">
+                        <i class="fa-solid fa-scroll text-2xl"></i>
+                        <p class="text-p1">Menus</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./tables.html" class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg">
+                        <i class="fa-solid fa-utensils text-2xl"></i>
+                        <p class="text-p1">Tables</p>
+                    </a>
+                </li>
+                <li>
+                    <button class="flex items-center justify-between mb-2 p-4 hover:bg-slate-100 rounded-lg w-full"
+                        aria-controls="dropdown-orders" data-collapse-toggle="dropdown-orders">
+                        <div class="flex gap-3">
+                            <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                            <p class="text-p1">Orders</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul id="dropdown-orders" class="hidden py-2 space-y-2">
+                        <li>
+                            <a href="./orders.html"
+                                class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg text-p1 pl-14">
+                                History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tasks.html"
+                                class="flex gap-3 mb-2 p-4 hover:bg-slate-100 rounded-lg text-p1 pl-14">
+                                Tasks
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
             <div class="flex items-center justify-center gap-5 absolute bottom-5">
                 <button type="button" data-modal-target="farkhan" data-modal-toggle="farkhan"
                     class="font-medium hover:underline">
@@ -64,7 +79,7 @@
         </div>
     </div>
 
-    <div class="lg:pl-96">
+    <div class="lg:pl-80">
         <div class="container mb-[135px] mx-auto px-5 lg:px-10">
             <!-- Navbar -->
             <nav class="mt-[29px] w-full h-[65px] bg-white z-40">
@@ -85,7 +100,7 @@
             <!-- Content -->
             <div class="mt-10">
                 <div class="w-full">
-                    <a href="./products.html"
+                    <a href="./menus.html"
                         class="bg-white mb-10 block w-fit text-primary shadow-search rounded-full px-[19px] py-3 hover:bg-slate-100">
                         <i class="fa-solid fa-chevron-left text-xl"></i>
                     </a>

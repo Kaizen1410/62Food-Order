@@ -90,6 +90,6 @@ input:focus, select:focus {
     border-color: unset !important;
 }
 
-.w-96 {
-    width: 384px;
+.w-80 {
+    width: 320px;
 }

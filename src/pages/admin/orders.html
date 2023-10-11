@@ -85,9 +85,9 @@
     <div class="lg:pl-80">
         <div class="container mb-[135px] mx-auto px-5 lg:px-10">
             <!-- Navbar -->
-            <nav class="mt-[29px] w-full h-[65px] bg-white z-40">
+            <nav class="mt-[29px] w-full bg-white z-40">
 
-                <div class="flex h-full justify-between items-center">
+                <div class="flex flex-wrap h-full justify-between items-center gap-5">
                     <div class="flex items-center gap-2">
                         <button class="px-4 py-3 rounded-2xl lg:hidden hover:bg-slate-100" onclick="toggleSidebar()">
                             <i class="fa-solid fa-bars text-h4"></i>
@@ -97,6 +97,14 @@
                             <h4 class="text-primary">Admin</h4>
                         </a>
                     </div>
+
+                    <label class="relative lg:w-[393px] w-full h-full shadow-search rounded-[10px]">
+                        <img src="../../assets/icon/search.svg" alt=""
+                            class="absolute left-[24px] top-1/2 -translate-y-1/2 w-[25px]">
+                        <input type="search"
+                            class="p-[14px] h-[65px] pl-[71px] focus:ring-primary focus:border-primary w-full text-h5 rounded-[10px]"
+                            placeholder="Search">
+                    </label>
                 </div>
             </nav>
 
@@ -113,218 +121,283 @@
                 </div>
             </div>
 
-            <div class="mt-10">
-                <div class="w-full">
-                    <h4 class="mb-5">Orders</h4>
-                    <div class="relative overflow-x-auto shadow-md mt-5 mb-10 rounded-xl">
-                        <table class="w-full text-p2 text-left text-gray-500 text-sm ">
-                            <thead class="text-sm text-gray-700 uppercase bg-primary dark:bg-gray-700 ">
-                                <tr>
-                                    <th scope="col" class="px-6 py-3 text-white text-center ">
+            <div class="mt-10 shadow-lg p-6 rounded-2xl">
+                <h4 class="mb-5">Orders</h4>
+
+                <select class="rounded-lg shadow-search cursor-pointer">
+                    <option value="" selected>Select Time Range</option>
+                    <option value="">Last 7 days</option>
+                    <option value="">Last 14 days</option>
+                    <option value="">A month ago</option>
+                    <option value="">2 month ago</option>
+                    <option value="">3 month ago</option>
+                    <option value="">A year ago</option>
+                </select>
+
+                <div class="relative overflow-x-auto shadow-md mt-5 mb-10 rounded-xl">
+                    <table class="w-full text-p2 text-left text-gray-500 text-sm ">
+                        <thead class="text-sm text-gray-700 uppercase bg-primary dark:bg-gray-700 ">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-white text-center cursor-pointer">
+                                    <div class="flex justify-center items-center gap-3">
+                                        <i class="fa-solid fa-caret-up"></i>
                                         ID
-                                    </th>
-                                    <th scope="col" class="px-6 py-3  text-white text-center">
+                                    </div>
+                                </th>
+                                <th scope="col" class="px-6 py-3  text-white text-center cursor-pointer">
+                                    <div class="flex justify-center items-center gap-3">
                                         Date
-                                    </th>
-                                    <th scope="col" class="px-6 py-3  text-white text-center">
+                                    </div>
+                                </th>
+                                <th scope="col" class="px-6 py-3  text-white text-center cursor-pointer">
+                                    <div class="flex justify-center items-center gap-3">
                                         Customer
-                                    </th>
-                                    <th scope="col" class="px-6 py-3  text-white text-center">
+                                    </div>
+                                </th>
+                                <th scope="col" class="px-6 py-3  text-white text-center cursor-pointer">
+                                    <div class="flex justify-center items-center gap-3">
                                         Status
-                                    </th>
-                                    <th scope="col" class="px-6 py-3  text-white text-center">
+                                    </div>
+                                </th>
+                                <th scope="col" class="px-6 py-3  text-white text-center cursor-pointer">
+                                    <div class="flex justify-center items-center gap-3">
                                         Total
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span class="bg-yellow-100 text-yellow-800 text-p2 mr-2 px-2.5 py-0.5 rounded">
-                                            Prepared
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span class="bg-yellow-100 text-yellow-800 text-p2 mr-2 px-2.5 py-0.5 rounded">
-                                            Ordered
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800  text-center">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span class="bg-red-100 text-red-800 text-p2 mr-2 px-2.5 py-0.5 rounded">
-                                            Cancelled
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b dark:bg-gray-800 text-center ">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                        #A525
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        01 January 2023
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Muhajir
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Rp 100.000
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="bg-yellow-100 text-yellow-800 text-p2 mr-2 px-2.5 py-0.5 rounded">
+                                        Prepared
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="bg-yellow-100 text-yellow-800 text-p2 mr-2 px-2.5 py-0.5 rounded">
+                                        Ordered
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800  text-center">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="bg-red-100 text-red-800 text-p2 mr-2 px-2.5 py-0.5 rounded">
+                                        Cancelled
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 text-center ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    #A525
+                                </th>
+                                <td class="px-6 py-4">
+                                    01 January 2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muhajir
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="bg-green-100 text-green-800 text-p2 mr-2 px-2.5 py-0.5 rounded">Reserved</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    Rp 100.000
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+
+                <div class="flex flex-wrap justify-end gap-5">
+                    <nav aria-label="Page navigation example">
+                        <ul class="inline-flex -space-x-px text-base h-10">
+                            <li>
+                                <a href="#"
+                                    class="flex items-center justify-center px-4 h-10 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"><i
+                                        class="fa-solid fa-chevron-left"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-current="page"
+                                    class="flex items-center justify-center px-4 h-10 text-orange-600 border border-gray-300 bg-orange-50 hover:bg-orange-100 hover:text-orange-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"><i
+                                        class="fa-solid fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <select class="shadow-search rounded-lg">
+                        <option value="">10 / Page</option>
+                        <option value="">25 / Page</option>
+                        <option value="">50 / Page</option>
+                        <option value="">100 / Page</option>
+                    </select>
+                </div>
+
             </div>
         </div>
     </div>

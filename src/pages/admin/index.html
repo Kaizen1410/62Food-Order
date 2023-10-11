@@ -119,18 +119,21 @@
                 <div class="flex flex-wrap gap-5 mb-5">
 
                     <div class="shadow-lg rounded-lg p-5 w-full xl:w-2/3">
-                        <h5 class="mb-5">Sales Reports</h5>
+                        <div class="flex justify-between mb-5">
+                            <h5>Sales Reports</h5>
+                            <select class="rounded-xl cursor-pointer hover:bg-slate-100">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
                         <canvas id="salesChart"></canvas>
                     </div>
 
                     <div class="shadow-lg rounded-lg p-5 grow basis-0">
-                        <div class="flex justify-between items-center mb-5">
-                            <h5>Statics</h5>
-                            <select class="rounded cursor-pointer hover:bg-slate-100">
-                                <option value="30">Last 30 Days</option>
-                            </select>
-                        </div>
-                        <div class="flex flex-wrap gap-5">
+                        <h5 class="mb-5">Statics</h5>
+                        <div class="flex flex-wrap gap-4">
                             <div class="flex items-center gap-5 rounded-2xl bg-orange-200 p-4 grow basis-0">
                                 <div class="rounded-lg flex justify-center bg-white items-center h-16 w-16">
                                     <i class="fa-solid fa-cart-shopping text-h4 text-orange-400"></i>
@@ -147,6 +150,15 @@
                                 <div>
                                     <p class="text-p1">Earnings</p>
                                     <h4 class="whitespace-nowrap">Rp 1.000.000</h5>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-5 rounded-2xl bg-blue-200 p-4 grow basis-0">
+                                <div class="rounded-lg flex justify-center bg-white items-center h-16 w-16">
+                                    <i class="fa-solid fa-scroll text-h4 text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-p1">Total Menus</p>
+                                    <h4 class="whitespace-nowrap">6</h5>
                                 </div>
                             </div>
                         </div>
@@ -280,14 +292,21 @@
             data: {
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
                 datasets: [{
-                    label: '2023',
+                    label: '',
                     data: [120, 400, 90, 200, 300, 240, 140, 220, 120, 100, 300, 40],
                     fill: true,
                     tension: 0.3,
                     borderColor: '#F48E28',
                     backgroundColor: '#fcc48b'
-                }]
+                }],
             },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
         });
     </script>
 </body>

@@ -15,13 +15,14 @@
     <!-- Sidebar -->
     <div id="sidebar" class="fixed top-0 left-0 overflow-x-hidden w-0 lg:w-80 h-full shadow-lg z-50 bg-white">
         <div class="p-5 h-full w-full">
-            <label class="relative w-[393px] rounded-[10px]">
-                <img src="../../assets/icon/store-solid.svg" alt=""
-                    class="absolute left-[24px] top-1/2 -translate-y-1/2 w-[25px]">
-                <input type="text"
-                    class="pl-[71px] pr-10 py-[14px] w-full focus:outline-none text-h5 rounded-lg shadow-search"
-                    placeholder="Enter Store Name" value="62 Store" required="required">
-            </label>
+            <div class="flex items-center justify-between rounded-[10px] shadow-search p-4">
+                <div class="flex justify-start gap-2">
+                    <img src="../../assets/icon/store-solid.svg" alt=""
+                        class="w-[25px]">
+                    <h5>62 Store Jakarta</h5>
+                </div>
+                <i class="fa-solid fa-pen cursor-pointer"></i>
+            </div>
 
             <ul class="mt-16">
                 <li>
@@ -111,31 +112,31 @@
                             <!-- Order Status -->
                             <div class="sm:hidden mb-10">
                                 <select
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                    <option>Ordered</option>
-                                    <option>Preparing</option>
-                                    <option>Reserved</option>
-                                    <option>Cancelled</option>
+                                    class="bg-gray-50 bor5der border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5">
+                                    <option value="ordered">Ordered</option>
+                                    <option value="preparing">Preparing</option>
+                                    <option value="reserved">Reserved</option>
+                                    <option value="cancelled">Cancelled</option>
                                 </select>
                             </div>
                             <ul
-                                class="hidden mb-10 text-sm font-medium text-center divide-x divide-gray-200 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+                                class="hidden mb-10 text-sm font-medium text-center divide-x divide-gray-200 rounded-lg shadow sm:flex">
                                 <li class="w-full">
-                                    <a href="#"
-                                        class="inline-block w-full py-3 px-4 bg-gray-100 rounded-l-lg focus:ring-4 focus:ring-blue-300 bg-primary text-white focus:outline-none dark:bg-gray-700 dark:text-white"
-                                        aria-current="page">Ordered</a>
+                                    <button
+                                        class="bg-primary text-white inline-block w-full py-3 px-4 rounded-l-lg focus:ring-4 focus:ring-orange-300 focus:outline-none"
+                                        aria-current="page">Ordered</button>
                                 </li>
                                 <li class="w-full">
-                                    <a href="#"
-                                        class="inline-block w-full py-3 px-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Preparing</a>
+                                    <button
+                                        class="bg-white inline-block w-full py-3 px-4 focus:ring-4 focus:ring-orange-300 focus:outline-none">Preparing</button>
                                 </li>
                                 <li class="w-full">
-                                    <a href="#"
-                                        class="inline-block w-full py-3 px-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Reserved</a>
+                                    <button
+                                        class="bg-white inline-block w-full py-3 px-4 focus:ring-4 focus:ring-orange-300 focus:outline-none">Reserved</button>
                                 </li>
                                 <li class="w-full">
-                                    <a href="#"
-                                        class="inline-block w-full py-3 px-4 bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Cancelled</a>
+                                    <button
+                                        class="bg-white inline-block w-full py-3 px-4 rounded-r-lg focus:ring-4 focus:outline-none focus:ring-orange-300">Cancelled</button>
                                 </li>
                             </ul>
 
@@ -183,7 +184,7 @@
                         </div>
 
                         <div class="mb-5 overflow-x-auto">
-                            <div class="flex items-center gap-4 border-b border-gray pb-4">
+                            <div class="flex items-center gap-4 border-b border-gray py-4">
                                 <img src="../../assets/img/popular/2.jpg"
                                     class="rounded-2xl object-cover aspect-video w-36" alt="">
                                 <p class="text-p1 grow basis-0">Enchilade</p>
@@ -193,7 +194,7 @@
                                 </p>
                                 <p class="text-p1 grow basis-0 text-end">Rp 150.000</p>
                             </div>
-                            <div class="flex items-center gap-4 border-b border-gray pb-4">
+                            <div class="flex items-center gap-4 border-b border-gray py-4">
                                 <img src="../../assets/img/popular/4.jpg"
                                     class="rounded-2xl object-cover aspect-video w-36" alt="">
                                 <p class="text-p1 grow basis-0">Pizza</p>
@@ -203,7 +204,7 @@
                                 </p>
                                 <p class="text-p1 grow basis-0 text-end">Rp 200.000</p>
                             </div>
-                            <div class="flex items-center gap-4 border-b border-gray pb-4">
+                            <div class="flex items-center gap-4 border-b border-gray py-4">
                                 <img src="../../assets/img/popular/5.jpg"
                                     class="rounded-2xl object-cover aspect-video w-36" alt="">
                                 <p class="text-p1 grow basis-0">Chicken Hot Pie</p>
@@ -213,7 +214,7 @@
                                 </p>
                                 <p class="text-p1 grow basis-0 text-end">Rp 150.000</p>
                             </div>
-                            <div class="flex items-center gap-4 border-b border-gray pb-4">
+                            <div class="flex items-center gap-4 border-b border-gray py-4">
                                 <img src="../../assets/img/popular/1.jpg"
                                     class="rounded-2xl object-cover aspect-video w-36" alt="">
                                 <p class="text-p1 grow basis-0">Gyro Sandwich</p>
